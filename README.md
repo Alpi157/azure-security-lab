@@ -22,7 +22,7 @@ Built for a cybersecurity portfolio, the project demonstrates how you would desi
 
 ## High‑Level Architecture
 
-- **On‑Prem Active Directory** → synced via **Azure AD Connect**
+- **On‑Prem Active Directory** → synced via Azure AD Connect
 - **Azure Entra ID** acts as the cloud identity plane
 - **Cloud apps** (M365, SaaS, Azure services) rely on Entra ID authentication
 - **Conditional Access + MFA** enforced at the cloud edge
@@ -142,17 +142,17 @@ azure-security-lab/
 
 ## Key Takeaways
 
-- **Cloud‑First + Hybrid Ready**: Simulates full user lifecycle from on-prem to cloud
-- **Zero‑Trust Mindset**: MFA, Conditional Access design, least-privilege RBAC
-- **Operational Awareness**: Log auditing, incident playbooks, governance docs
-- **No Paid Services Needed**: Creative, cost-effective identity engineering
+**Cloud‑First + Hybrid Ready**: Simulates full user lifecycle from on-prem to cloud
+**Zero‑Trust Mindset**: MFA, Conditional Access design, least-privilege RBAC
+**Operational Awareness**: Log auditing, incident playbooks, governance docs
+**No Paid Services Needed**: Creative, cost-effective identity engineering
 
 ---
 
 ## Next Steps (Road‑Map)
 
-- Upgrade to **Entra ID Premium P1** → enforce Conditional Access & scoped roles
-- Integrate **Defender for Cloud Apps** for advanced analytics
-- Automate provisioning with **Terraform** or **Bicep**
-- Add **Sentinel Workbook** to create a SOC-ready dashboard
+Upgrade to **Entra ID Premium P1** → enforce Conditional Access & scoped roles
+Integrate **Defender for Cloud Apps** for advanced analytics
+Automate provisioning with **Terraform** or **Bicep**
+Add **Sentinel Workbook** to create a SOC-ready dashboard
 
