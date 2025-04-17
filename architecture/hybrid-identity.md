@@ -6,8 +6,8 @@
 ---
 
 ## 1  Why Hybrid Identity Matters
-Most enterprises still run **on‑prem Active Directory** for legacy apps, printers, and GPOs while simultaneously adopting **cloud SaaS** (Microsoft 365, ServiceNow, Salesforce, Azure resources).  
-A **hybrid identity** lets users sign in *once* and access both worlds with the **same credentials**—secured by modern cloud controls (MFA, Conditional Access, risk‑based policies).
+Most enterprises still run on‑prem Active Directory for legacy apps, printers, and GPOs while simultaneously adopting cloud SaaS (Microsoft 365, ServiceNow, Salesforce, Azure resources).  
+A hybrid identity lets users sign in *once* and access both worlds with the same credentials, secured by modern cloud controls (MFA, Conditional Access, risk‑based policies).
 
 ---
 
@@ -15,11 +15,11 @@ A **hybrid identity** lets users sign in *once* and access both worlds with the
 
 | # | Component | Role |
 |---|-----------|------|
-| 1 | **On‑Prem AD** | Authoritative source of users / groups for legacy services |
-| 2 | **Azure AD Connect** | Bridge that synchronises identities & optionally passwords |
-| 3 | **Azure Entra ID** | Cloud identity provider for Office 365, Azure, SaaS apps |
-| 4 | **Conditional Access + MFA** | Zero‑trust enforcement layer at the cloud edge |
-| 5 | **Cloud Applications** | M365, bespoke SaaS, Azure services that rely on Entra ID tokens |
+| 1 | On‑Prem AD | Authoritative source of users / groups for legacy services |
+| 2 | Azure AD Connect | Bridge that synchronises identities & optionally passwords |
+| 3 | Azure Entra ID | Cloud identity provider for Office 365, Azure, SaaS apps |
+| 4 | Conditional Access + MFA | Zero‑trust enforcement layer at the cloud edge |
+| 5 | Cloud Applications | M365, bespoke SaaS, Azure services that rely on Entra ID tokens |
 
 *All elements except on‑prem AD/AD Connect were built under the free Azure tier; AD Connect was simulated via documentation.*
 
@@ -53,7 +53,7 @@ A **hybrid identity** lets users sign in *once* and access both worlds with the
    - Leave default OU filtering (all synced)
 
 4. **Verify Sync**  
-   - Azure Portal → Entra ID → Users ⇒ “**Sync Type: Synced**”  
+   - Azure Portal → Entra ID → Users ⇒ “Sync Type: Synced”  
    - Confirm password matches on‑prem login
 
 5. **Enable Hybrid SSO (optional)**  
@@ -89,18 +89,18 @@ A **hybrid identity** lets users sign in *once* and access both worlds with the
 | Hybrid SSO configuration | Kerberos trust | Not required for portfolio |
 | Cost | Free but needs a VM/license | Avoided; kept within Azure Free |
 
-Creating **clear documentation** shows understanding without incurring infrastructure cost—accepted practice for student portfolios.
+Creating clear documentation shows understanding without incurring infrastructure cost—accepted practice for student portfolios.
 
 ---
 
 ## 8  Future Enhancements
 
-- Deploy a **lightweight on‑prem lab** in Hyper‑V/VirtualBox and run AD Connect end‑to‑end  
-- Add **Azure AD Connect Staging Mode** for blue/green sync testing  
-- Integrate **Microsoft Sentinel** to correlate sign‑in anomalies across on‑prem and cloud
+- Deploy a lightweight on‑prem lab in Hyper‑V/VirtualBox and run AD Connect end‑to‑end  
+- Add Azure AD Connect Staging Mode for blue/green sync testing  
+- Integrate Microsoft Sentinel to correlate sign‑in anomalies across on‑prem and cloud
 
 ---
 
 ## 9  Key Takeaways
 
-> By designing (and partially implementing) Azure AD Connect, this project proves the ability to **bridge legacy infrastructures with modern cloud security**, aligning with real enterprise migration journeys—all achieved without premium licensing.
+> By designing (and partially implementing) Azure AD Connect, this project proves the ability to bridge legacy infrastructures with modern cloud security, aligning with real enterprise migration journeys—all achieved without premium licensing.
