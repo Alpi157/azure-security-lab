@@ -1,7 +1,7 @@
 # Conditional Access Strategy (Design‑Only)
 
 > **File:** `policies/conditional-access.md`  
-> _(Implementation requires Azure AD Premium P1; the free tier lets us **plan** and **document** these policies without enforcing them.)_
+> _(Implementation requires Azure AD Premium P1; the free tier lets us plan and document these policies without enforcing them.)_
 
 ---
 
@@ -11,7 +11,7 @@
 **Unified Risk Engine** → Uses sign‑in risk, device health & location signals  
 **Granular Controls** → Enforce MFA, block, or limit sessions dynamically
 
-Because the free tier doesn’t apply CA rules, we treat this as an **architecture & policy design exercise**—a standard expectation in student portfolios.
+Because the free tier doesn’t apply CA rules, we treat this as an architecture & policy design exercise, a standard expectation in portfolios.
 
 ---
 
@@ -73,7 +73,7 @@ _Repeat analogous steps for other policies, swapping Conditions & Controls._
 | P‑03 | After‑hours sign‑in attempts by `Interns` | Temporary disable + manager notification |
 | P‑04 | Guest login without MFA challenge | Investigate device compliance & guest lifecycle |
 
-For full production, integrate **Microsoft Sentinel** or **Defender for Cloud Apps** to alert on CA policy matches.
+For full production, integrate Microsoft Sentinel or Defender for Cloud Apps to alert on CA policy matches.
 
 ---
 
@@ -81,9 +81,9 @@ For full production, integrate **Microsoft Sentinel** or **Defender for Cloud 
 
 | Iteration | Feature | Benefit |
 |-----------|---------|---------|
-| v2 | **Sign‑in Risk Policies** (Identity Protection) | Automate response to impossible travel & TOR exit nodes |
-| v3 | **Device Compliant Access** | Combine Intune posture with user context |
-| v4 | **Continuous Access Evaluation (CAE)** | Real‑time session revocation on token risk changes |
+| v2 | Sign‑in Risk Policies (Identity Protection) | Automate response to impossible travel & TOR exit nodes |
+| v3 | Device Compliant Access | Combine Intune posture with user context |
+| v4 | Continuous Access Evaluation (CAE) | Real‑time session revocation on token risk changes |
 
 ---
 
