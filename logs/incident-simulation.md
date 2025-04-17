@@ -1,8 +1,8 @@
 # Incident Simulation & Response Playbook
 
 
-This document walks through **two simulated identity‑based attack scenarios** inside the Azure Entra ID lab.  
-Although no live traffic exists in the free‑tier environment, each step mirrors real SOC procedures and demonstrates how I would **detect, contain, and eradicate** threats.
+This document walks through two simulated identity‑based attack scenarios inside the Azure Entra ID lab.  
+Although no live traffic exists in the free‑tier environment, each step mirrors real SOC procedures and demonstrates how I would detect, contain, and eradicate threats.
 
 ---
 
@@ -10,7 +10,7 @@ Although no live traffic exists in the free‑tier environment, each step mirror
 | Phase | Action | Tooling (Free Tier) |
 |-------|--------|--------------------|
 | **Preparation** | Baseline MFA, groups, audit logging enabled | Azure Portal |
-| **Detection** | Monitor **Sign‑in Logs** & email alerts | Entra ID → Monitoring |
+| **Detection** | Monitor Sign‑in Logs & email alerts | Entra ID → Monitoring |
 | **Analysis** | Pivot on user, IP, timestamp, MFA result | Sign‑in log filters |
 | **Containment** | Disable account / revoke sessions | Entra ID user blade |
 | **Eradication** | Reset password, enforce MFA, review CA | Per‑user MFA portal |
@@ -42,13 +42,13 @@ Although no live traffic exists in the free‑tier environment, each step mirror
 
 | Item | Detail |
 |------|--------|
-| **User** | `vendor@ext.com` (Guest) |
+| **User** | `vendor@…` (Guest) |
 | **Event** | 5 failed sign‑ins within 2 minutes from 3 IP ranges |
 | **Detection Method** | Sign‑in log filter: *User Type = Guest · Status = Failure · Last 24 h* |
 | **Risk** | Credential leak of external partner account |
 
 ### Response Steps
-1. **Contain** – Permanently **block sign‑in** for `vendor@ext.com`.  
+1. **Contain** – Permanently block sign‑in for `vendor@…`.  
 2. **Notify** – Email vendor security POC to rotate credentials.  
 3. **Eradicate** – Review any *app permissions* the guest may hold.  
 4. **Hardening** – Document a new policy: *“Guests must register MFA within 24 h or be auto‑disabled.”*  
@@ -70,16 +70,16 @@ Although no live traffic exists in the free‑tier environment, each step mirror
 | Stage | Upgrade | Benefit |
 |-------|---------|---------|
 | **Short Term** | Export sign‑in logs to CSV, build KQL queries locally | Ad‑hoc threat hunting |
-| **Mid Term** | Connect **Log Analytics Workspace** (cost‑controlled) | Alerts & dashboards |
-| **Long Term** | Deploy **Microsoft Sentinel** with Identity workbook |  Fusion ML, SOAR playbooks |
+| **Mid Term** | Connect Log Analytics Workspace (cost‑controlled) | Alerts & dashboards |
+| **Long Term** | Deploy Microsoft Sentinel with Identity workbook |  Fusion ML, SOAR playbooks |
 
 
 ---
 
 ## 6  Key Takeaways
 
-- Even without paid features, **manual log review** and **well‑defined playbooks** provide strong security posture.
-- **Proactive Conditional Access design** (documented earlier) would automate both scenarios.
-- The exercise highlights my ability to **think like a SOC analyst**, craft incident workflows, and translate findings into actionable policy.
+- Even without paid features, manual log review and well‑defined playbooks provide strong security posture.
+- Proactive Conditional Access design (documented earlier) would automate both scenarios.
+- The exercise highlights my ability to think like a SOC analyst, craft incident workflows, and translate findings into actionable policy.
 
 ---
