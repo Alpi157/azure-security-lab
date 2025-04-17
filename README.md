@@ -143,8 +143,11 @@ azure-security-lab/
 ## Key Takeaways
 
 **Cloud‑First + Hybrid Ready**: Simulates full user lifecycle from on-prem to cloud
+
 **Zero‑Trust Mindset**: MFA, Conditional Access design, least-privilege RBAC
+
 **Operational Awareness**: Log auditing, incident playbooks, governance docs
+
 **No Paid Services Needed**: Creative, cost-effective identity engineering
 
 ---
@@ -152,7 +155,10 @@ azure-security-lab/
 ## Next Steps (Road‑Map)
 
 Upgrade to Entra ID Premium P1 → enforce Conditional Access & scoped roles
+
 Integrate Defender for Cloud App* for advanced analytics
+
 Automate provisioning with Terraform or Bicep
+
 Add Sentinel Workbook to create a SOC-ready dashboard
 
