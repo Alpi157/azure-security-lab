@@ -162,3 +162,14 @@ Automate provisioning with Terraform or Bicep
 
 Add Sentinel Workbook to create a SOC-ready dashboard
 
+---
+
+## Skills Demonstrated
+
+- Azure Active Directory (Entra ID)
+- IAM Design (Users, Groups, Roles)
+- Conditional Access & MFA Enforcement
+- Administrative Units for delegated management
+- Azure Security Best Practices
+- Documentation & GitHub-based portfolio development
+
