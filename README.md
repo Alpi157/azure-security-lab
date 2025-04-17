@@ -20,6 +20,15 @@ Built for a cybersecurity portfolio, the project demonstrates how you would desi
 
 ---
 
+## Lab Sections
+- [User Structure](users_groups/user-structure.md)
+- [Administrative Units](users_groups/administrative-units.md)
+- [Conditional Access Policy](policies/conditional-access.md)
+- [Hybrid Identity Design](architecture/hybrid-identity.md)
+- [Incident Simulation](logs/incident-simulation.md)
+
+---
+
 ## High‑Level Architecture
 
 - **On‑Prem Active Directory** → synced via Azure AD Connect
