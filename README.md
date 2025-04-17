@@ -156,7 +156,7 @@ azure-security-lab/
 
 Upgrade to Entra ID Premium P1 → enforce Conditional Access & scoped roles
 
-Integrate Defender for Cloud App* for advanced analytics
+Integrate Defender for Cloud App for advanced analytics
 
 Automate provisioning with Terraform or Bicep
 
