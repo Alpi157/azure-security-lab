@@ -151,8 +151,8 @@ azure-security-lab/
 
 ## Next Steps (Road‑Map)
 
-Upgrade to **Entra ID Premium P1** → enforce Conditional Access & scoped roles
-Integrate **Defender for Cloud Apps** for advanced analytics
-Automate provisioning with **Terraform** or **Bicep**
-Add **Sentinel Workbook** to create a SOC-ready dashboard
+Upgrade to Entra ID Premium P1 → enforce Conditional Access & scoped roles
+Integrate Defender for Cloud App* for advanced analytics
+Automate provisioning with Terraform or Bicep
+Add Sentinel Workbook to create a SOC-ready dashboard
 
